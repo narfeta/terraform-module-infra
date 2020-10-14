@@ -1,7 +1,3 @@
-variable "vpc_cidr"    {}
-variable "tag_name"    {}
+variable "cidr"        {}
 variable "zones"       {}
 variable "region"      {}
-variable "bucket"      {}
-variable "github_user" {}
-variable "rate"        {}
