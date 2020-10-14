@@ -1,6 +1,6 @@
 # CREATE VPC
 resource "aws_vpc" "vpc" {
-    cidr_block           = "${var.vpc_cidr}"
+    cidr_block           = "${var.cidr}"
     enable_dns_hostnames = true
     enable_dns_support   = true
     instance_tenancy     = "default"
@@ -12,7 +12,7 @@ resource "aws_vpc" "vpc" {
 resource "aws_subnet" "subnet" {
     count                   = "${length(split(",", var.zones))}"
     vpc_id                  = "${aws_vpc.vpc.id}"
-    cidr_block              = "${cidrsubnet(var.vpc_cidr, 4, count.index)}"
+    cidr_block              = "${cidrsubnet(var.cidr, 4, count.index)}"
     availability_zone       = "${var.region}${element(split(",", var.zones), count.index)}"
     map_public_ip_on_launch = true
     tags = {

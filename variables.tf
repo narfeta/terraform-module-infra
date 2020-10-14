@@ -1,3 +1,3 @@
-variable "vpc_cidr"    {}
+variable "cidr"        {}
 variable "zones"       {}
 variable "region"      {}
