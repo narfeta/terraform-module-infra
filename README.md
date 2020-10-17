@@ -1,4 +1,4 @@
-terraform-module-vpc
+terraform-module-infra
 ====
 
 ## Module that creates the base infrastructure
