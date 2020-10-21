@@ -28,3 +28,6 @@ vpc id | vpc-xxx | the aws vpc id that was assigned to the created vpc
 vpc_subnet | [ "subnet-xxx, "subnet-xxx"] | array result with the aws ids for the created vpc
 region | us-east-1 | the region where this infrastructure was created
 
+## Dependencies
+
+None
