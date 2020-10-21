@@ -17,16 +17,16 @@ It will create:
 Variables |  Optional | Default Value | Example | Description
 ---|---|---|---|---|
 cidr | no | - | 10.10.0.0/16 | The cidr that will be used to create the vpc
-zones | no | - | a,b,c | the zones where the vpc will be deployed
-region | no | - | us-east-1 | aws region where our infrastructure will be builded
+zones | no | - | a,b,c | The zones where the vpc will be deployed
+region | no | - | us-east-1 | AWS region where our infrastructure will be builded
 
 
 ## Outputs
 Variables | Example | Description
 ---|---|---|
-vpc id | vpc-xxx | the aws vpc id that was assigned to the created vpc
-vpc_subnet | [ "subnet-xxx, "subnet-xxx"] | array result with the aws ids for the created vpc
-region | us-east-1 | the region where this infrastructure was created
+vpc id | vpc-xxx | The aws vpc id that was assigned to the created vpc
+vpc_subnet | [ "subnet-xxx, "subnet-xxx"] | Array result with the aws ids for the created vpc
+region | us-east-1 | The region where this infrastructure was created
 
 ## Dependencies
 
